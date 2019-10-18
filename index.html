@@ -1,0 +1,70 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>main page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+
+<header>
+    <h1>
+      <p class="title">MORNING GROUP BLOG</p>
+    </h1>
+   <div class="login">
+     <a href="#login" target="_blank" <b>login</b></a>
+</div> 
+    
+</header>
+<h3>Nav</h3>
+<p>Click on the button to open the dropdown menu.</p>
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
+<script>
+    
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+    
+<div class="father">
+    <p>
+        Serene Hamsho, born in Hama, Syria 1986, is a Syrian engineer and inventor specializing in renewable energy. She received an international patent for a wind turbine system design in 2015,and was recognized by the BBC's 100 Women and featured in the finale of the programme's international edit-a-thon in 2016Hamsho received a bachelor's degree in electronic engineering from the University of Kalamoon, Syria in 2008, and an MSc degree in management of renewable energy from the University of Versailles, France. And received her professional education in 2017 at the Massachusetts Institute of Technology. In 2012, Hamsho joined General Electric in Schenectady, New York, where she currently holds the title of Wind Turbine Electrical Design Engineer.</p>
+</div>   
+
+
+</div>
+    
+</body>
+<footer>
+
+</footer>
+</html>
